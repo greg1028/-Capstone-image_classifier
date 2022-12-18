@@ -1,6 +1,6 @@
 # VTIP (Vehicle Type Identification Program)
 주/야간 자동차 종류 식별 모델 VTIP입니다.  
-CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, finetuning 하여  
+CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, fine tuning 하여  
 총 5개 모델을 ensemble 했습니다.  
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
@@ -12,20 +12,22 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 마지막에 작성
 
 ## 프로젝트 수행 과정 구체적이고 명확한가? 
-(프로젝트 보고 내용을 참고하여, 다른 팀이 수행하더라도, 비슷하게 재현 가능하도록 충실히 기술되어 있는가?)
+(프로젝트 보고 내용을 참고하여, 다른 팀이 수행하더라도, 비슷하게 재현 가능하도록 충실히 기술되어 있는가?)  
 
-1. 인식 대상 자동차 선정  
-- Bus, Freight, Hatchback, Sedan, SUV, Truck, Van  
+1. 인식 대상 자동차 선정
+- Bus, Freight, Hatchback, Sedan, SUV, Truck, Van
 
-2. RAW 학습 데이터 구축 및 전처리  
+2. RAW 학습 데이터 구축 및 전처리
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
 - 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
 - 7개의 classes로 디렉토리 구성 (Bus, Freight, Hatchback, Sedan, SUV, Truck, Van)
 - 모델 학습에 적합하도록 이미지 전처리 코드 작성 Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)
 
-3. 모델 구축 및 앙상블
+3. CNN, Resnet50, Densnet121, Xception, MobileNetV2 학습 및 fine tuning
+-  [tensorflow.keras.application](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception)를 이용한 모델 생성
+-  각 모델의 input pixels 에 맞게 scale (input preprocessing)
 -  
-5. 모델 검증 및 웹 인터페이스 제공  
+5. 모델 검증 및 웹 인터페이스 제공
 
 
 ## 성능표 (59,114장의 이미지를 이용한 test 결과)
