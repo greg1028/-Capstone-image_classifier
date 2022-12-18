@@ -42,11 +42,11 @@ ensemble of deep networks for vehicle-type classification." IEEE Access 8 (2020)
 98266-98280.
 □ 김한겸, et al. "CNN 알고리즘 기반 2 단계 차종 분류 모델." 한국정보처리학회 학술대회논문집 28.2 (2021): 791-794.
 
-CNN
-Resnet50
-Densnet121
-Xception
-MobileNetV2
+CNN  
+Resnet50  
+Densnet121  
+Xception  
+MobileNetV2  
 
 
 ## 필요 조건
