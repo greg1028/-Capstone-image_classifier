@@ -48,24 +48,17 @@ Densnet121
 Xception  
 MobileNetV2  
 
-
 ## 필요 조건
-작성한 코드를 실행하기 전에 설치해야할 pakage나 의존성이 걸리는 문제들을 설명하면 된다.
+작성한 코드를 실행하기 전에 설치해야할 pakage나 의존성이 걸리는 문제들을 설명하면 된다.  
 
 ## 구성
-해당 파일이 어떠한 역할을 하는 파일인지를 간단히 설명 전반적인 맥락을 파악하기 위한 용도
-
+해당 파일이 어떠한 역할을 하는 파일인지를 간단히 설명 전반적인 맥락을 파악하기 위한 용도  
 
 ## 실행 방법
-작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인이다. Usage Example을 함께 작성하면 좋다.
-
+작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인이다. Usage Example을 함께 작성하면 좋다.  
 
 ## 라이센스
-[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-
-
-
-
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 
 ## 기여 방법
 1. 본 프로젝트를 포크합니다.
