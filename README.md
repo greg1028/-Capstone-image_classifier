@@ -76,7 +76,12 @@ MobileNetV2
 해당 파일이 어떠한 역할을 하는 파일인지를 간단히 설명 전반적인 맥락을 파악하기 위한 용도  
   
 ## 코드 실행 필요 조건
-작성한 코드를 실행하기 전에 설치해야할 pakage나 의존성이 걸리는 문제들을 설명하면 된다.  
+모델을 학습하기 위해서 자신의 GPU/CPU 버전에 맞는 package 들이 필요합니다.
+[GPU/CPU 호환 버전 확인하기](https://www.tensorflow.org/install/source_windows#tested_build_configurations)
+- tensorflow_gpu gpu를 사용하지 않는다면 tensorflow를 설치해도 되지만, 매우 느립니다.
+- cuDNN
+- CUDA
+- cudatoolkit
   
 ## 코드 실행 방법
 작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인이다. Usage Example을 함께 작성하면 좋다.  
