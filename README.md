@@ -78,7 +78,7 @@ MobileNetV2
 ## 코드 실행 필요 조건
 모델을 학습하기 위해서 자신의 GPU/CPU 버전에 맞는 package 들이 필요합니다.
 [GPU/CPU 호환 버전 확인하기](https://www.tensorflow.org/install/source_windows#tested_build_configurations)
-- tensorflow_gpu gpu를 사용하지 않는다면 tensorflow를 설치해도 되지만, 매우 느립니다.
+- tensorflow_gpu : gpu를 사용하지 않는다면 tensorflow를 설치해도 되지만, CPU를 사용하므로 매우 느립니다.
 - cuDNN
 - CUDA
 - cudatoolkit
