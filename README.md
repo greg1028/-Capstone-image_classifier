@@ -61,6 +61,7 @@ MobileNetV2
 
 
 ## 라이센스
+Apache License 2.0()
 
 
 
