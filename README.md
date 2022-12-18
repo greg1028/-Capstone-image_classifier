@@ -5,7 +5,7 @@ Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
   
 총 443,335개의 차량 이미지를 통해
-training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성  
+training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성했고  
 모델 학습 및 검증하였습니다.    
   
 ## 목적 (산업체 수요를 명확히 이해하여 프로젝트를 진행하였는가?)
