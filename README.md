@@ -14,10 +14,10 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 마지막에 작성
 
 ## 프로젝트
-**1. 인식 대상 자동차 선정**
+**_1. 인식 대상 자동차 선정_**
 - Bus, Freight, Hatchback, Sedan, SUV, Truck, Van  
     
-**2. RAW 학습 데이터 구축 및 전처리**
+**_2. RAW 학습 데이터 구축 및 전처리_**
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
 - 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
 - 7개의 classes로 디렉토리 구성 (Bus, Freight, Hatchback, Sedan, SUV, Truck, Van)
