@@ -14,16 +14,16 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 마지막에 작성
 
 ## 프로젝트 수행 과정 구체적이고 명확한가? 
-//1. 인식 대상 자동차 선정
+**1. 인식 대상 자동차 선정
 - Bus, Freight, Hatchback, Sedan, SUV, Truck, Van  
     
-//2. RAW 학습 데이터 구축 및 전처리
+**2. RAW 학습 데이터 구축 및 전처리
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
 - 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
 - 7개의 classes로 디렉토리 구성 (Bus, Freight, Hatchback, Sedan, SUV, Truck, Van)
 - 모델 학습에 적합하도록 이미지 전처리 코드 작성 Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)  
     
-//3. CNN, Resnet50, Densnet121, Xception, MobileNetV2 학습 및 fine tuning, ensemble
+**3. CNN, Resnet50, Densnet121, Xception, MobileNetV2 학습 및 fine tuning, ensemble
 -  [tensorflow.keras.application](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception)를 이용한 모델 생성
 -  각 모델의 input pixels 에 맞게 scale (input preprocessing)
 -  Training_set과 Validation_set을 이용한 모델들 학습
@@ -31,7 +31,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 -  Test_set을 이용한 모델 검증
 -  5개의 models를 ensemble한 최종 차종 식별 모델 생성  
     
-//4. 웹 인터페이스를 통한 서비스 제공
+**4. 웹 인터페이스를 통한 서비스 제공
 - html을 이용한 web 인터페이스 생성
 - 사진 입력시 yolo를 이용한 차량 검출, 최종 차종 식별 모델을 이용한 차종 식별 
   
