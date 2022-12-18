@@ -5,7 +5,7 @@ CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, fin
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
 총 443,335개의 차량 이미지를 통해  
-training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성했고  
+Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구성했고  
 이를 통해 모델들을 학습 및 검증하였습니다.    
   
 ## 목차
@@ -19,9 +19,12 @@ training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구�
 
 2. RAW 학습 데이터 구축 및 전처리  
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
-- 크롭된 이미지 파일만으로 이미지 데이터를 전처리
+- 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
+- 7개의 classes로 디렉토리 구성 (Bus, Freight, Hatchback, Sedan, SUV, Truck, Van)
+- 모델 학습에 적합하도록 이미지 전처리 코드 작성 Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)
 
-4. 오픈된 객체 식별 알고리즘을 활용하여 학습 모델 개발  
+3. 모델 구축 및 앙상블
+-  
 5. 모델 검증 및 웹 인터페이스 제공  
 
 
