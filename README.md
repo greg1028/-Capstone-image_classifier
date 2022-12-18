@@ -5,7 +5,8 @@ Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
   
 총 443,335개의 차량 이미지를 통해
-training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성하여 모델 학습 및 검증하였습니다.    
+training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성하여  
+모델 학습 및 검증하였습니다.    
   
 ## 목적 (산업체 수요를 명확히 이해하여 프로젝트를 진행하였는가?)
 주/야간 자동차 종류 식별을 위한 인공지능 개발
@@ -21,8 +22,7 @@ training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구�
 (프로젝트 보고 내용을 참고하여, 다른 팀이 수행하더라도, 비슷하게 재현 가능하도록
 충실히 기술되어 있는가?)
 
-## 성능표 (를 쉽게 확인할 수 있도록 정리가 되었는가?)
-
+## 성능표 59,114장의 이미지를 이용한 test 결과
 
 |        |CNN|ResNet50|Xception|Densenet121|MobileNetV2|VTIP|
 |---|---|---|---|---|---|---|
