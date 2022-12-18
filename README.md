@@ -1,6 +1,7 @@
 # VTIP (Vehicle Type Identification Program)
+주/야간 자동차 종류 식별 모델 VTIP입니다.  
 CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, finetuning 하여  
-총 5개 모델을 ensemble한 주/야간 자동차 종류 식별 모델 VTIP입니다.  
+총 5개 모델을 ensemble 했습니다.  
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
 총 443,335개의 차량 이미지를 통해  
