@@ -1,4 +1,4 @@
-# VTIP
+# VTIP (Vehicle Type Identification Program)
 CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, finetuning 하여  
 총 5개 모델을 ensemble한 주/야간 자동차 종류 식별 모델 VTIP입니다.  
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
@@ -7,10 +7,13 @@ Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
 training_set(354,669장), validation_set(29,552장), test_set(59,114장)을 구성했고  
 이를 통해 모델들을 학습 및 검증하였습니다.    
   
+## 목차
+
+
 ## 목적 (산업체 수요를 명확히 이해하여 프로젝트를 진행하였는가?)
 주/야간 자동차 종류 식별을 위한 인공지능 개발
 
-## 프로젝트 수행 과정 (구체적이고 명확한가?) 
+## 프로젝트 수행 과정 (공부 순서) 구체적이고 명확한가? 
 0. 관련 배경 지식 공부
 1. 인식 대상 자동차 선정  
 2. RAW 학습 데이터 구축 및 전처리
@@ -47,7 +50,7 @@ Densnet121
 Xception  
 MobileNetV2  
 
-## 필요 조건
+## 코드 실행 필요 조건
 작성한 코드를 실행하기 전에 설치해야할 pakage나 의존성이 걸리는 문제들을 설명하면 된다.  
 
 ## 구성
