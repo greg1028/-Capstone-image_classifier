@@ -63,10 +63,10 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 
 <br/><br/>
 ## 참고자료 reference
-[CNN]
+[CNN](https://www.tensorflow.org/tutorials/images/cnn)  
 [Resnet50]
 [Densnet121]
-[Xception]  
+[Xception]
 [MobileNetV2]
 
 ensemble
@@ -76,7 +76,8 @@ ensemble
   
 [stackoverflow](https://stackoverflow.com)  
 [datascience.stackexchange](https://datascience.stackexchange.com)  
-
+[keras documentation](https://keras.io/)  
+[tensorflow](https://www.tensorflow.org)  
 □ 이용, et al. "자동-레이블링 기반 영상 학습데이터 제작 시스템." 한국콘텐츠학회논문지 21.6 (2021): 701-715.
 <br/><br/>
 □ Hedeya, Mohamed A., Ahmad H. Eid, and Rehab F. Abdel-Kader. "A super-learner
