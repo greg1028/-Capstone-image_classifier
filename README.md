@@ -63,10 +63,10 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
   
 ## 성능
 (59,114장의 이미지를 이용한 test 결과)
-|        |CNN|ResNet50|Xception|Densenet121|MobileNetV2|VTIP(ensemble)|
+|        |CNN|ResNet50|Xception|** Densenet121 ** |MobileNetV2|VTIP(ensemble)|
 |---|---|---|---|---|---|---|
-|accuracy|0.9701|0.9835|0.9726|0.9870|0.9757| |
-|loss    |0.1869|0.1097|0.1126|0.0596|0.0981| |
+|accuracy|0.9701|0.9835|0.9726|0.9870|0.9757|0.9259|
+|loss    |0.1869|0.1097|0.1126|0.0596|0.0981|0.8395|
 
 
 <br/><br/>
