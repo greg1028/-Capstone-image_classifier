@@ -9,6 +9,7 @@
 각 클래스별로 분류하여 폴더에 저장합니다.  
 
 [데모보기]()
+https://youtu.be/-WyWCNJS92g
 
 **CNN** 모델 구축 후 **Resnet50**, **Densnet121**, **Xception**, **MobileNetV2** 를 학습,  
 fine tuning 했고, 총 5개 모델을 **averaging** 하여 **ensemble** 했습니다.  
@@ -78,7 +79,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 
 <br/><br/>
 ## 데모
-시연 유튜브 링크
+[시연 유튜브 링크](https://youtu.be/-WyWCNJS92g)
 
 
 <br/><br/>
