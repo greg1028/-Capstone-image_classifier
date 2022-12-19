@@ -122,7 +122,11 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 □ 김한겸, et al. "CNN 알고리즘 기반 2 단계 차종 분류 모델." 한국정보처리학회 학술대회논문집 28.2 (2021): 791-794.  
 <br/><br/>
 ## 구성
-해당 파일이 어떠한 역할을 하는 파일인지를 간단히 설명 전반적인 맥락을 파악하기 위한 용도  
+(code)models 모델을 import, training, fine tuning 하기 위한 코드이다.  
+(image)TestData 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
+[DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
+
+
   <br/><br/>
 ## 코드 실행 필요 조건
 모델을 학습하기 위해서 자신의 GPU/CPU 버전에 맞는 package 들이 필요합니다.
