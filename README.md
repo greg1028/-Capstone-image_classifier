@@ -71,27 +71,27 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 
 <br/><br/>
 ## 참고자료 reference
-[CNN tensorflow document](https://www.tensorflow.org/tutorials/images/cnn)
+CNN [tensorflow document](https://www.tensorflow.org/tutorials/images/cnn)
 - [CNN이란?https://youngq.tistory.com/40](https://youngq.tistory.com/40)  
 
 <br/>
 
-[Resnet50 tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50)
+Resnet50 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50)
 - [Resnet50구조 https://velog.io/@ssulee0206/ResNet50](https://velog.io/@ssulee0206/ResNet50)  
 
 <br/>
 
-[Densnet121 tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/densenet/DenseNet121) 
+Densnet121 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/densenet/DenseNet121) 
 - [Densenet121구조 https://csm-kr.tistory.com/10](https://csm-kr.tistory.com/10)  
 
 <br/>
 
-[Xception tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception) 
+Xception [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception) 
 - [Xception구조 https://wikidocs.net/122179](https://wikidocs.net/122179)  
 
 <br/>
 
-[MobileNetV2 tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2) 
+MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2) 
 - [MobileNetV2구조 https://gaussian37.github.io/dl-concept-mobilenet_v2/](https://gaussian37.github.io/dl-concept-mobilenet_v2/)  
 
 <br/>
@@ -105,6 +105,8 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 [datascience.stackexchange](https://datascience.stackexchange.com)  
 [keras documentation](https://keras.io/)  
 [tensorflow](https://www.tensorflow.org)  
+<br/><br/>
+
 □ 이용, et al. "자동-레이블링 기반 영상 학습데이터 제작 시스템." 한국콘텐츠학회논문지 21.6 (2021): 701-715.
 <br/><br/>
 □ Hedeya, Mohamed A., Ahmad H. Eid, and Rehab F. Abdel-Kader. "A super-learner
