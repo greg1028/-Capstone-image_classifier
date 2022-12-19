@@ -23,7 +23,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 공부가 필요한 부분은 [참고자료](#참고자료-reference)의 링크를 통해 무리없이 학습하실 수 있습니다.  
 추가로 [구성](#구성), [코드 실행 필요 조건](#코드-실행-필요-조건), [코드 실행 방법](#코드-실행-방법)등을 확인하세요.
 
-[DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)
+[DataSet, 저장된 모델들, Demo, VTIP실행파일](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)
 
 <br/><br/>
   
