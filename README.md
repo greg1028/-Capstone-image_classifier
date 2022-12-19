@@ -41,7 +41,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
 - 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
 - 7개의 classes로 디렉토리 구성 (Bus, Freight, Hatchback, Sedan, SUV, Truck, Van)
-- 모델 학습에 적합하도록 이미지 전처리 코드 작성 Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)  
+- 모델 학습에 적합하도록 이미지 전처리 코드 작성  Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)  
    
 **_3. CNN, Resnet50, Densnet121, Xception, MobileNetV2 학습 및 fine tuning, ensemble_**
 -  [tensorflow.keras.application](https://www.tensorflow.org/api_docs/python/tf/keras/applications)를 이용한 모델 생성
