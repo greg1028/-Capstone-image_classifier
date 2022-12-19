@@ -1,5 +1,5 @@
-# VTIP (Vehicle Type Identification Program)
-전북대학교 2022 겨울학기 Capstone 프로젝트입니다. 
+# VTIP (Vehicle Type Identification Program) 전북대학교 2022 겨울학기 Capstone 프로젝트
+
 <br/>
 **주/야간 자동차 종류 식별 모델** **_VTIP_** 입니다.  
 사진 속 차량들을 각 차종들로 분류하는 모델입니다.  
