@@ -69,13 +69,13 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 
 <br/><br/>
 ## 참고자료 reference
-[CNN](https://www.tensorflow.org/tutorials/images/cnn)  
-[Resnet50](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50)  
-[Densnet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/densenet/DenseNet121)  
-[Xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception)  
-[MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2)  
+[CNN](https://www.tensorflow.org/tutorials/images/cnn) [CNN이란?https://youngq.tistory.com/40](https://youngq.tistory.com/40)  
+[Resnet50](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50) [Resnet50구조 https://velog.io/@ssulee0206/ResNet50](https://velog.io/@ssulee0206/ResNet50)  
+[Densnet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/densenet/DenseNet121) [Densenet121구조 https://csm-kr.tistory.com/10](https://csm-kr.tistory.com/10)  
+[Xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception) [Xception구조 https://wikidocs.net/122179](https://wikidocs.net/122179)  
+[MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2) [MobileNetV2구조 https://gaussian37.github.io/dl-concept-mobilenet_v2/](https://gaussian37.github.io/dl-concept-mobilenet_v2/)  
 
-ensemble
+[ensemble 이란?](https://velog.io/@hyesoup/%EC%95%99%EC%83%81%EB%B8%94-Ensemble-%EC%9D%B4%EB%9E%80)
 - [everage ensemble with models](https://stackoverflow.com/questions/67647843/is-there-a-way-to-ensemble-two-keras-h5-models-trained-for-same-classes)
 - [change layer's name](https://datascience.stackexchange.com/questions/40886/how-to-change-the-names-of-the-layers-of-deep-learning-in-keras)  
   
