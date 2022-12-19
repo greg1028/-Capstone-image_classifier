@@ -1,0 +1,214 @@
+from tkinter import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import QPixmap
+import sys
+import cv2
+import os
+from PIL import ImageTk, Image
+from tkinter import filedialog
+import numpy as np
+from PIL import Image
+import shutil
+from keras.models import load_model
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+categories = ["버스","화물차","해치백","승용차","SUV","트럭","승합차"]
+model = load_model('VTIP_Ensemble.h5')
+
+file_dir = ''
+w_width = 250
+
+class VTIP(QMainWindow):
+    def __init__(self) :
+        super().__init__()
+        global w_width
+        
+        self.setWindowTitle('Vehicle Type Identification Program')
+        self.setGeometry(300,300,w_width,230)        
+        
+        self.img_uploadButton = QPushButton('파일 입력',self)
+        self.executeButton = QPushButton('실행하기',self)
+        self.quitButton = QPushButton('끝내기',self)
+        self.img_Label = QLabel('',self)
+        self.fname_Label = QLabel('사진을 업로드 해 주세요',self)
+        
+        self.img_uploadButton.setGeometry((int)(w_width/2)-90,10,180,50)
+        self.img_Label.setGeometry((int)(w_width/2)-105,65,210,0)
+        self.fname_Label.setGeometry((int)(w_width/2)-65,80,210,20)
+        self.executeButton.setGeometry((int)(w_width/2)-60,120,120,50)
+        self.quitButton.setGeometry((int)(w_width/2)-50,180,100,30)
+        
+        self.img_uploadButton.clicked.connect(self.img_uploadFunction)
+        self.executeButton.clicked.connect(self.executeFunction)
+        self.quitButton.clicked.connect(self.quitFunction)
+        
+    def img_uploadFunction(self):
+        global w_width
+        global file_dir
+        fname = QFileDialog.getOpenFileName(self, 'Open File', '', 'Image File(*.jpg *.png);; All File(*)')
+        
+        if fname[0]:
+            file_dir=fname[0]
+            print(fname[0])
+            pixmap = QPixmap(fname[0])
+            pixmap = pixmap.scaledToHeight(210)
+            self.img_Label.setPixmap(pixmap)
+            self.img_Label.resize(pixmap.width(), 210)
+            
+            
+            if w_width < pixmap.width()+40:
+                self.resize(pixmap.width()+40, 400)
+                w_width = pixmap.width()+40
+            else:
+                self.resize(w_width, 400)
+            
+            self.fname_Label.setText('{}'.format(fname[0]))    
+            
+            self.img_uploadButton.setGeometry((int)(w_width/2)-105,10,210,50)
+            self.fname_Label.setGeometry((int)(w_width/2)-115,280,210,20)
+            self.executeButton.setGeometry((int)(w_width/2)-60,300,120,50)
+            self.quitButton.setGeometry((int)(w_width/2)-50,360,100,30)
+            
+             
+        else:
+            QMessageBox.about(self, 'Warning', '파일을 선택하지 않았습니다.')
+             
+        
+        
+    def executeFunction(self):
+        global file_dir
+        
+        if file_dir:
+            def createDirectory(directory):
+                try:
+                    if not os.path.exists(directory):
+                        os.makedirs(directory)
+                except OSError:
+                    print("Error: Failed to create the directory.")
+            
+            # Yolo 로드
+            net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
+            classes = []
+            with open("coco.names", "r") as f:
+                classes = [line.strip() for line in f.readlines()]
+            layer_names = net.getLayerNames()
+            output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
+            colors = np.random.uniform(0, 255, size=(len(classes), 3))
+
+            # 이미지 불러오기
+            img = cv2.imread(file_dir)
+            height, width, channels = img.shape
+
+            # 객체 검출
+            blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+            net.setInput(blob)
+            outs = net.forward(output_layers)
+
+            # 클래스 레이블, 레이블링 좌표지정
+            class_ids = []
+            confidences = []
+            boxes = []
+            for out in outs:
+                for detection in out:
+                    scores = detection[5:]
+                    class_id = np.argmax(scores)
+                    confidence = scores[class_id]
+                    if confidence > 0.5:
+                        # Object detected
+                        center_x = int(detection[0] * width)
+                        center_y = int(detection[1] * height)
+                        w = int(detection[2] * width)
+                        h = int(detection[3] * height)
+                        # Rectangle coordinates
+                        x = int(center_x - w / 2)
+                        y = int(center_y - h / 2)
+                        boxes.append([x, y, w, h])
+                        confidences.append(float(confidence))
+                        class_ids.append(class_id)
+                        
+            indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
+
+            #차량 이미지 저장
+            if os.path.exists('./cropped_img/'):
+                shutil.rmtree('./cropped_img/')
+                
+            createDirectory('./cropped_img/')
+            
+            count = 0
+            for i in range(len(boxes)):
+                if i in indexes:
+                    x, y, w, h = boxes[i]
+                    label = str(classes[class_ids[i]])
+                    if label=='car' or label=='truck' or label=='bus' :
+                        count += 1
+                        trim_img=img[y:y+h, x:x+w]
+                        cv2.imwrite('./cropped_img/{}.jpg'.format(count),trim_img)
+            count = 0
+            bus_count = 0
+            freight_count = 0
+            hatchback_count = 0
+            sedan_count = 0
+            SUV_count = 0
+            truck_count = 0
+            van_count = 0
+            
+            for filename in os.listdir('./cropped_img/'):
+                count = count + 1
+                if count == 1:
+                    if os.path.exists('./result/'):
+                        shutil.rmtree('./result/')
+                    
+                img = Image.open('./cropped_img/{}.jpg'.format(count))
+                img = img.convert("RGB")
+                img = img.resize((128, 128))
+                data = np.asarray(img)
+                data = np.expand_dims(data, axis=0)
+                preds = model.predict(data)
+                index = preds.argmax()
+                createDirectory('./result/')
+                if categories[index] == '버스':
+                    createDirectory('./result/bus/')
+                    bus_count +=1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/bus/{}.jpg'.format(bus_count))
+                if categories[index] == '화물차':
+                    createDirectory('./result/freight/')
+                    freight_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/freight/{}.jpg'.format(freight_count))
+                if categories[index] == '해치백':
+                    createDirectory('./result/hatchback/')
+                    hatchback_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/hatchback/{}.jpg'.format(hatchback_count))
+                if categories[index] == '승용차':
+                    createDirectory('./result/sedan/')
+                    sedan_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/sedan/{}.jpg'.format(sedan_count))
+                if categories[index] == 'SUV':
+                    createDirectory('./result/SUV/')
+                    SUV_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/SUV/{}.jpg'.format(SUV_count))
+                if categories[index] == '트럭':
+                    createDirectory('./result/truck/')
+                    truck_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/truck/{}.jpg'.format(truck_count))
+                if categories[index] == '승합차':
+                    createDirectory('./result/van/')
+                    van_count += 1
+                    shutil.move('./cropped_img/{}.jpg'.format(count), './result/van/{}.jpg'.format(van_count))
+                    
+                print(categories[index])
+            QMessageBox.information(self,"수행 완료","작업이 모두 완료되었습니다.")
+            os.startfile('result')
+            shutil.rmtree('./cropped_img/')
+        else:
+            QMessageBox.about(self, 'Warning', '이미지 파일이 업로드되지 않았습니다.')
+        
+    def quitFunction(self):
+        cv2.destroyAllWindows()
+        self.close()
+        
+app=QApplication(sys.argv)
+win=VTIP()
+win.show()
+app.exec_()
