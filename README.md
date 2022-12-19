@@ -29,6 +29,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 8. [VTIP 사용 방법](#VTIP-사용-방법)
 9. [라이센스](#라이센스)
 10. [기여 방법](#기여-방법)
+11. [회고]
 <br/><br/>
 ## 프로젝트 수행 과정
 **_1. 인식 대상 자동차 선정_**
@@ -149,3 +150,5 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 >> (style) : 코드 스타일 혹은 포맷 등에 관한 커밋  
 >> (refactor) : 코드 리팩토링에 대한 커밋  
 >> (test) : 테스트 코드 수정에 대한 커밋
+<br/><br/>
+## 회고
