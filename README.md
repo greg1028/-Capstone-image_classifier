@@ -64,10 +64,10 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 <br/><br/>
 ## 참고자료 reference
 [CNN](https://www.tensorflow.org/tutorials/images/cnn)  
-[Resnet50]
-[Densnet121]
-[Xception]
-[MobileNetV2]
+[Resnet50](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50)  
+[Densnet121](https://www.tensorflow.org/api_docs/python/tf/keras/applications/densenet/DenseNet121)  
+[Xception](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception)  
+[MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2)  
 
 ensemble
 - [everage ensemble with models](https://stackoverflow.com/questions/67647843/is-there-a-way-to-ensemble-two-keras-h5-models-trained-for-same-classes)
