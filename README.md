@@ -74,10 +74,11 @@ ensemble
 [stackoverflow](https://stackoverflow.com)  
 [datascience.stackexchange](https://datascience.stackexchange.com)  
 
-□ 이용, et al. "자동-레이블링 기반 영상 학습데이터 제작 시스템." 한국콘텐츠학회논문지 21.6 (2021): 701-715.    
+□ 이용, et al. "자동-레이블링 기반 영상 학습데이터 제작 시스템." 한국콘텐츠학회논문지 21.6 (2021): 701-715.
+<br/><br/>
 □ Hedeya, Mohamed A., Ahmad H. Eid, and Rehab F. Abdel-Kader. "A super-learner
   ensemble of deep networks for vehicle-type classification." IEEE Access 8 (2020):
-  98266-98280.    
+  98266-98280.<br/><br/>
 □ 김한겸, et al. "CNN 알고리즘 기반 2 단계 차종 분류 모델." 한국정보처리학회 학술대회논문집 28.2 (2021): 791-794.  
 
 ## 구성
