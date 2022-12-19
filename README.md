@@ -1,5 +1,5 @@
 # VTIP (Vehicle Type Identification Program)
-주/야간 자동차 종류 식별 모델 VTIP입니다.  
+**주/야간 자동차 종류 식별 모델** **_VTIP_** 입니다.  
 사진 속 차량들을 각 차종들로 분류하는 모델입니다.  
 
 CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습,  
