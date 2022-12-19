@@ -101,6 +101,8 @@ ensemble
 - cuDNN
 - CUDA
 - cudatoolkit
+- anaconda3
+- jupyter notebook
   <br/><br/>
 ## 코드 실행 방법
 작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인이다. Usage Example을 함께 작성하면 좋다.  
