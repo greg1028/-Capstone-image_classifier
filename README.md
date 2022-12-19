@@ -28,7 +28,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 - Bus, Freight, Hatchback, Sedan, SUV, Truck, Van로 classes 선정
 - 본 프로젝트와 같은 데이터를 통해 차종을 분류하는 모델을 만든 사례가 있어 비교/평가에 용이하다고 판단.
 ["CNN 알고리즘 기반 2 단계 차종 분류 모델."](#참고자료-reference)  
-<br/>
+
 **_2. RAW 학습 데이터 구축 및 전처리_**
 - [Aihub](https://aihub.or.kr/)의 자동차 차종/연식/번호판 인식용 영상 데이터 선정 (231.15 GB)
 - 직사각형으로 크롭된 차량 이미지 파일만 추출 (7.33 GB, 443,335장)
