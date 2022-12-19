@@ -27,11 +27,9 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 4. [참고자료](#참고자료-reference)
 5. [구성](#구성)
 6. [코드 실행 필요 조건](#코드-실행-필요-조건)
-7. [코드 실행 방법](#코드-실행-방법)
-8. [VTIP 사용 방법](#VTIP-사용-방법)
-9. [라이센스](#라이센스)
-10. [기여 방법](#기여-방법)
-11. [회고](#회고)
+7. [라이센스](#라이센스)
+8. [기여 방법](#기여-방법)
+9. [회고](#회고)
 <br/><br/>
 ## 프로젝트 수행 과정
 **_1. 인식 대상 자동차 선정_**
@@ -140,11 +138,7 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 - anaconda3
 - jupyter notebook
   <br/><br/>
-## 코드 실행 방법
-작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인이다. Usage Example을 함께 작성하면 좋다.  
-<br/><br/>
-## VTIP 사용 방법
-<br/><br/>
+
 ## 라이센스
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 <br/><br/>
