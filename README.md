@@ -14,7 +14,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 1. [프로젝트 수행 과정](#프로젝트-수행-과정)
 2. [성능](#성능)
 3. [데모](#데모)
-4. [참고자료](#참고자료)
+4. [참고자료](#참고자료-reference)
 5. [구성](#구성)
 6. [코드 실행 필요 조건](#코드-실행-필요-조건)
 7. [코드 실행 방법](#코드-실행-방법)
@@ -57,7 +57,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 
 
 
-## 참고자료
+## 참고자료 reference
 
 □ 이용, et al. "자동-레이블링 기반 영상 학습데이터 제작 시스템." 한국콘텐츠학회논문지 21.6
 (2021): 701-715.  
@@ -72,7 +72,13 @@ Densnet121
 Xception  
 MobileNetV2  
 ensemble
-- [change layer's name](https://datascience.stackexchange.com/questions/40886/how-to-change-the-names-of-the-layers-of-deep-learning-in-keras)
+- [everage ensemble with models](https://stackoverflow.com/questions/67647843/is-there-a-way-to-ensemble-two-keras-h5-models-trained-for-same-classes)
+- [change layer's name](https://datascience.stackexchange.com/questions/40886/how-to-change-the-names-of-the-layers-of-deep-learning-in-keras)  
+  
+  
+reference  
+[stackoverflow](https://stackoverflow.com)
+[datascience.stackexchange](https://datascience.stackexchange.com)
 
 ## 구성
 해당 파일이 어떠한 역할을 하는 파일인지를 간단히 설명 전반적인 맥락을 파악하기 위한 용도  
