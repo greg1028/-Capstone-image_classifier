@@ -2,8 +2,8 @@
 주/야간 자동차 종류 식별 모델 VTIP입니다.  
 사진 속 차량들을 각 차종들로 분류하는 모델입니다.  
 
-CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습, fine tuning 했고, 
-총 5개 모델을 averaging 하여 ensemble 했습니다.  
+CNN 모델 구축 후 Resnet50, Densnet121, Xception, MobileNetV2를 학습,  
+fine tuning 했고, 총 5개 모델을 averaging 하여 ensemble 했습니다.  
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 7개 classes를 가집니다.
   
 총 443,335개의 차량 이미지를 통해  
