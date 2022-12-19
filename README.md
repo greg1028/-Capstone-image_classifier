@@ -131,7 +131,7 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 ## 구성
 (code)models 모델을 import, training, fine tuning 하기 위한 코드이다.  
 (image)TestData 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
-[DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
+[드라이브](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
 VTIP_exe.ipynb VTIP 실행파일을 만드는 코드이다.
 
   <br/><br/>
