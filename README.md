@@ -9,6 +9,12 @@ Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 **7개 classes** 를 가집�
 총 443,335개의 차량 이미지를 통해  
 Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구성했고  
 이를 통해 모델들을 학습 및 검증하였습니다.    
+
+본 프로젝트를 참고하여 공부하고 싶으신분들 께서는
+[프로젝트 수행 과정](#프로젝트-수행-과정) 을 따라 전체적인 흐름을 이해하시고,  
+공부가 필요한 부분은 [참고자료](#참고자료-reference)의 링크를 통해 무리없이 학습하실 수 있습니다.
+추가로 [코드 실행 필요 조건](#코드-실행-필요-조건) , [코드 실행 방법](#코드-실행-방법)등을 확인하세요.
+
 <br/><br/>
   
 ## 목차
@@ -36,14 +42,14 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 - 모델 학습에 적합하도록 이미지 전처리 코드 작성 Traning 80%, Vaildation 7%, Test 13% (354,669장, 29,552장, 59,114장)  
    
 **_3. CNN, Resnet50, Densnet121, Xception, MobileNetV2 학습 및 fine tuning, ensemble_**
--  [tensorflow.keras.application](https://www.tensorflow.org/api_docs/python/tf/keras/applications/xception/Xception)를 이용한 모델 생성
+-  [tensorflow.keras.application](https://www.tensorflow.org/api_docs/python/tf/keras/applications)를 이용한 모델 생성
 -  각 모델의 input pixels 에 맞게 scale (input preprocessing)
 -  Training_set과 Validation_set을 이용한 모델들 학습
 -  CNN을 제외한 나머지 모델 fine tuning (모델 정확도 향상)
 -  Test_set을 이용한 모델 검증
--  5개의 models를 ensemble한 최종 차종 식별 모델 생성  
+-  5개의 models를 averaging-ensemble한 최종 차종 식별 모델 생성  
     
-**_4. 웹 인터페이스를 통한 서비스 제공_**
+**_4. 인터페이스를 통한 서비스 제공_**
 - html을 이용한 web 인터페이스 생성
 - 사진 입력시 yolo를 이용한 차량 검출, 최종 차종 식별 모델을 이용한 차종 식별 
   <br/><br/>
