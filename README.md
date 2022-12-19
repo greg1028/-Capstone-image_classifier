@@ -3,6 +3,8 @@
 **주/야간 자동차 종류 식별 모델** **_VTIP_** 입니다.  
 사진 속 차량들을 각 차종들로 분류하는 인공지능 모델입니다.  
 
+
+
 **CNN** 모델 구축 후 **Resnet50**, **Densnet121**, **Xception**, **MobileNetV2** 를 학습,  
 fine tuning 했고, 총 5개 모델을 **averaging** 하여 **ensemble** 했습니다.  
 Bus, Freight, Hatchback, Sedan, SUV, Truck, Van의 **7개 classes** 를 가집니다.
@@ -125,7 +127,7 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 (code)models 모델을 import, training, fine tuning 하기 위한 코드이다.  
 (image)TestData 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
 [DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
-
+VTIP_exe.ipynb VTIP 실행파일을 만드는 코드이다.
 
   <br/><br/>
 ## 코드 실행 필요 조건
