@@ -8,7 +8,7 @@
 파일을 업로드 하신 후, 실행하기 버튼을 누르시면 사진 속 차량들을 검출하고,   
 각 클래스별로 분류하여 폴더에 저장합니다.  
 
-https://youtu.be/-WyWCNJS92g
+[데모보기_유튜브](https://youtu.be/-WyWCNJS92g)
 
 **CNN** 모델 구축 후 **Resnet50**, **Densnet121**, **Xception**, **MobileNetV2** 를 학습,  
 fine tuning 했고, 총 5개 모델을 **averaging** 하여 **ensemble** 했습니다.  
