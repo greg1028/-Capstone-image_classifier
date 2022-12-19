@@ -16,7 +16,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
 공부가 필요한 부분은 [참고자료](#참고자료-reference)의 링크를 통해 무리없이 학습하실 수 있습니다.  
 추가로 [구성](#구성), [코드 실행 필요 조건](#코드-실행-필요-조건), [코드 실행 방법](#코드-실행-방법)등을 확인하세요.
 
-[사용한 DataSet, model.h5](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)
+[DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)
 
 <br/><br/>
   
@@ -105,7 +105,9 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 - [everage ensemble with models](https://stackoverflow.com/questions/67647843/is-there-a-way-to-ensemble-two-keras-h5-models-trained-for-same-classes)
 - [change layer's name](https://datascience.stackexchange.com/questions/40886/how-to-change-the-names-of-the-layers-of-deep-learning-in-keras)  
   
-  
+
+[DataSet, 저장된 모델들](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)  
+
 [stackoverflow](https://stackoverflow.com)  
 [datascience.stackexchange](https://datascience.stackexchange.com)  
 [keras documentation](https://keras.io/)  
