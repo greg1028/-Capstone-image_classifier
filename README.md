@@ -152,7 +152,7 @@ names, cfg 파일이 있어야 정상적으로 동작되고,
 (용량의 한계로 드라이브에 업로드 함)  
   
   <br/><br/> Yolo_GUI.ipynb 실행법  
-  yolov3.weights 를 [여기]()서 다운받고,   
+  yolov3.weights 를 [여기](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)서 다운받고,   
 yolov3.weights, Yolo_GUI를 yolo, tkinter, PyQt5 폴더에 옮겨주세요 
 Yolo_GUI 코드를 실행시키면 됩니다.  
    
