@@ -60,7 +60,7 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
     
 **_4. 사용자가 입력할 영상이미지(이미지 데이터)에서 차량객체 인식_**
 - 사진 입력시 yolov3를 이용한 차량 검출, 최종 차종 식별 모델을 이용한 차종 식별
-- yolov3에서 검출된 image를 model의 input size에 맞게 resize하는 과정에서 image가 많이 변형되어 예측 성능이 심하게 낮아지는 문제가 있다.추후에 해결할 예정이다.
+- yolov3에서 검출된 image를 model의 input size에 맞게 resize하는 과정에서 image가 많이 변형되어 예측 성능이 낮아지는 문제가 있다.추후에 해결할 예정이다.
  
 **_5. 인터페이스를 통한 서비스 제공_**
 - tkinter, PyQt5를 통한 GUI 인터페이스로 프로그램을 직관적으로 실행 가능하도록 하였다.
@@ -132,7 +132,8 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 (code)models 모델을 import, training, fine tuning 하기 위한 코드이다.  
 (image)TestData 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
 [드라이브](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)에 실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
-VTIP_exe.ipynb VTIP 실행파일을 만드는 코드이다.
+Yolo_GUI.ipynb 실행파일을 만드는 코드이다.  
+yolo, tkinter, PyQt5 Yolo_GUI 실행을 위해 필요한 파일들이 들어있는 폴더이다.
 
   <br/><br/>
 ## 코드 실행 필요 조건
@@ -143,7 +144,19 @@ VTIP_exe.ipynb VTIP 실행파일을 만드는 코드이다.
 - CUDA
 - cudatoolkit
 - anaconda3
-- jupyter notebook
+- jupyter notebook  
+
+Yolo_GUI 실행을 위해서는   
+names, cfg 파일이 있어야 정상적으로 동작되고,   
+추가로 yolov3.weights 가 있어야 정상적으로 동작합니다.  
+(용량의 한계로 드라이브에 업로드 함)  
+  
+  <br/><br/> Yolo_GUI.ipynb 실행법  
+  yolov3.weights 를 [여기]()서 다운받고,   
+yolov3.weights, Yolo_GUI를 yolo, tkinter, PyQt5 폴더에 옮겨주세요 
+Yolo_GUI 코드를 실행시키면 됩니다.  
+   
+
   <br/><br/>
 
 ## 라이센스
