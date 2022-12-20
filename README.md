@@ -130,11 +130,11 @@ MobileNetV2 [tensorflow document](https://www.tensorflow.org/api_docs/python/tf/
 □ 김한겸, et al. "CNN 알고리즘 기반 2 단계 차종 분류 모델." 한국정보처리학회 학술대회논문집 28.2 (2021): 791-794.  
 <br/><br/>
 ## 구성
-**(code)models** 모델을 import, training, fine tuning 하기 위한 코드이다.  
-**(image)TestData** 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
+**(code)models** : 모델을 import, training, fine tuning 하기 위한 코드이다.  
+**(image)TestData** : 코드를 실행시킬 수 있도록 만든 sample image data set이다.  
 [드라이브](https://drive.google.com/drive/folders/15ozD4DQ5JLCrXg6_t5TWyCMI_YWAGdJz)에 실제로 훈련에 사용된 DataSet과 저장된 모델들이 준비되어 있다.    
-**Yolo_GUI.ipynb** VTIP 실행파일을 만드는 코드이다.  
-**yolo, tkinter, PyQt5 Yolo_GUI** 실행을 위해 필요한 파일들이 들어있는 폴더이다.
+**Yolo_GUI.ipynb** : VTIP 실행파일을 만드는 코드이다.  
+**yolo, tkinter, PyQt5 Yolo_GUI** : 실행을 위해 필요한 파일들이 들어있는 폴더이다.
 
   <br/><br/>
 ## 코드 실행 필요 조건
