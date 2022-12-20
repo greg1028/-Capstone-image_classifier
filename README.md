@@ -60,7 +60,8 @@ Training_set(354,669장), Validation_set(29,552장), Test_set(59,114장)을 구�
     
 **_4. 사용자가 입력할 영상이미지(이미지 데이터)에서 차량객체 인식_**
 - 사진 입력시 yolov3를 이용한 차량 검출, 최종 차종 식별 모델을 이용한 차종 식별
-- yolov3에서 검출된 image를 model의 input size에 맞게 resize하는 과정에서 image가 많이 변형되어 예측 성능이 낮아지는 문제가 있다.추후에 해결할 예정이다.
+- yolov3에서 검출된 image를 model의 input size에 맞게 resize하는 과정에서 image가 많이 변형되어 예측 성능이 낮아지는 문제가 있다.  
+  추후에 해결할 예정이다.
  
 **_5. 인터페이스를 통한 서비스 제공_**
 - tkinter, PyQt5를 통한 GUI 인터페이스로 프로그램을 직관적으로 실행 가능하도록 하였다.
